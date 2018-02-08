@@ -32,18 +32,18 @@ for w in words:
     if bigboy < len(w):
         bigboy = len(w)
 print(bigboy)
-
+'''
 count = 0
 for w in words:
     count += len(w)
 print(count)
-
+'''
 count = 370099
 for i in words:
     if 'e' in i:
         count -= 1
 print(count)
-'''
+
 count = 0
 for w in words:
     i = 0
@@ -51,6 +51,7 @@ for w in words:
     while i < len(w):
         if w[i] == 'a':
             acount += 1
+        i += 1
     if acount == 3:
         count += 1
 print(count)
@@ -63,3 +64,4 @@ for w in words:
             if w[i+1] != 'u':
                 count =+ 1
 print(count)        
+'''
