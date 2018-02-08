@@ -3,7 +3,7 @@ with open('words_alpha.txt', 'r') as f:
 
 print(words[0:10])
 print()
-
+'''
 count = 0
 for w in words:
     count += 1
@@ -43,38 +43,23 @@ for i in words:
     if 'e' in i:
         count -= 1
 print(count)
-
 '''
 count = 0
 for w in words:
-    if 'q' in w:
+    i = 0
+    acount = 0
+    while i < len(w):
+        if w[i] == 'a':
+            acount += 1
+    if acount == 3:
         count += 1
-for w in words:
-    if 'qu' in w:
-        count -= 1
 print(count)
 
-count = 0
-def find_q(w):
-    for w in words:
-        if 'q' in w:
-            count += 1
-        elif 'qu' in w:
-            count -= 1
-    return count
-print(count)
-
-
-count = 0
-for w in words: 
-     if 'q' in w and not 'u' in w:
-         count += 1
-print(count)
-'''
 count = 0
 for w in words:
-    for i in w:
-        if i == q and i+1 != u:
-            count += 1
-        else:
-            
+    i = 0
+    while i < len(w):
+        if w[i] == 'q':
+            if w[i+1] != 'u':
+                count =+ 1
+print(count)        
